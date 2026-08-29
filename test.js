@@ -1,5 +1,4 @@
-JavaScript
-// Validación simple de lógica
+
 const precioUnitario = 10;
 const cantidad = 3;
 const totalEsperado = 30;
