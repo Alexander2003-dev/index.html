@@ -10,4 +10,5 @@ if (totalCalculado !== totalEsperado) {
     console.error(" Error en el cálculo del carrito");
     process.exit(1); // Hace que el pipeline falle
 } else {
-    console.log(" Pruebas de carrito ex
+    console.log(" Pruebas de carrito exitosas");
+}
