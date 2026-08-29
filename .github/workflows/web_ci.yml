@@ -1,0 +1,20 @@
+YAML
+name: Web Frontend CI Pipeline
+
+on: [push, pull_request]
+
+jobs:
+  testing-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Validar script de Javascript
+        run: node test.js
